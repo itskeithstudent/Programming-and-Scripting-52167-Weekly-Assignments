@@ -12,13 +12,19 @@ if(user_input==1):
     print(user_input)
 #else we start to enter a while loop which remains true until the user_input is no longer > 1
 else:
+    #initialise concat_operation as blank
+    #it gets all results of calculations appended to the end of it
     concat_operation=''
+    #while user_input is still greater than or equal to one
     while(user_input>=1):
-        concat_operation = concat_operation + f' {user_input}'
+        #on first loop it will just use user_input as it was input, with a space to seperate it from next char
+        concat_operation = concat_operation + f'{user_input} '
         user_input = user_input//2
+        #if remainder after dividing user_input by two and user is not one then number is odd
         if user_input % 2 and user_input != 1:
-            concat_operation = concat_operation + f' {user_input}'
+            concat_operation = concat_operation + f'{user_input } '
             user_input = oddNum(user_input)
+    #print concat_operation and strip whitespace from the end
     print(concat_operation.strip())
 
 
