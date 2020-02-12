@@ -1,8 +1,8 @@
 #A program that outputs whether or not today is a weekday.
 
 #these two lists are lowercase, in case we get variance in use of case in user supplied string e.g. Monday/TUESdaY/etc.
-weekdays = ["monday","tuesday","wednesday","thursday","friday"]
-weekend = ["saturday", "sunday"]
+weekdays = ("monday","tuesday","wednesday","thursday","friday")
+weekend = ("saturday", "sunday")
 #take in day of the week from user
 curr_day=str(input("Enter what day of the week it is and I'll tell you whether it's the weekend or not. "))
 
