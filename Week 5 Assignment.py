@@ -12,3 +12,12 @@ elif curr_day.lower() in weekend:
     print("Congratulations it is the weekend, it will be a week day soon...")
 else:
     print("Sorry you didn't enter a valid day")
+
+#add logic to get current day from current date and time.
+from datetime import datetime
+todays_datetime = datetime.today()
+today = todays_datetime.strftime('%A')
+if today in weekdays:
+    print("My sincere condolences, it is a week day, get back to work...")
+else:
+    print("Congratulations it is the weekend, it will be a week day soon...")
