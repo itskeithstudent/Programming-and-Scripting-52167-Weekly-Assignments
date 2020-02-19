@@ -1,4 +1,6 @@
-#program takes integer input from user
+#   Keith Ryan
+#   Week 4 Assignment
+#   program takes integer input from user
 user_input = int(input("Please enter a happy (positive) number - "))
 
 #definition to do odd number calculation, when we get an odd number after dividing some number by 2

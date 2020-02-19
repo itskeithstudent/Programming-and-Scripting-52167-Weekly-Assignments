@@ -1,3 +1,5 @@
+#   Keith Ryan
+#   Week 2 Assignment
 #Simple program to take user input for Weight (in kg) and Height (in cm)
 #Then we caclulate the user height in meters squared, finally we calculate the BMI
 user_weight_kg = int(input('Enter Weight: '))

@@ -1,4 +1,6 @@
-#A program that outputs whether or not today is a weekday.
+#   Keith Ryan
+#   Week 5 Assignment
+#   A program that outputs whether or not today is a weekday.
 
 #these two lists are lowercase, in case we get variance in use of case in user supplied string e.g. Monday/TUESdaY/etc.
 weekdays = ("monday","tuesday","wednesday","thursday","friday")

@@ -1,3 +1,6 @@
+#   Keith Ryan
+#   Week 3 Assignment
+
 #Take input from user as string, output every second letter in reverse order
 user_input_str = str(input('Please enter a sentence: '))
 
