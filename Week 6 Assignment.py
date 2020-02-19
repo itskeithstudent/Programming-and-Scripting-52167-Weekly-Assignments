@@ -1,3 +1,5 @@
+#   Keith Ryan
+#   Week 6 Assignment
 #function to get square root of user supplied number
 
 #this function takes an original number and gets the square root of it
