@@ -5,8 +5,13 @@
 
 # this function takes an input from user that should point to folder location containing a .txt file
 def countLetterE(path):
-
-    print(path)
+    count=0
+    textFile = open(path)
+    textFileStr = textFile.read()
+    for char in textFileStr:
+        if char == 'e':
+            count+=1
+    print(count)
 
 user_input = input("Enter the path to a file you want to count the times the letter e occurs: ")
 countLetterE(user_input)
