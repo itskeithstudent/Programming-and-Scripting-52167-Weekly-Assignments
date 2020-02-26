@@ -8,6 +8,7 @@ import sys
 def countLetterE(path):
     count=0 #count is initialised to 0 on calling function as we have yet to count any 'e's
     textFile = open(path) #open user supplied path
+    textFile.close()
     textFileStr = textFile.read() #take the file we've opened, read it and store in string variable textFileStr
     for char in textFileStr: #for each character in textFileStr check if 'e'
         if char.lower() == 'e': #consider case where e is upper or lower case
