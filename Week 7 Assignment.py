@@ -9,7 +9,7 @@ def countLetterE(path):
     count=0 #count is initialised to 0 on calling function as we have yet to count any 'e's
     #add try except outer block to ensure file can be opened
     try:
-        textFile = open(path) #open user supplied path
+        textFile = open(path, 'r') #open user supplied path
         #inner try except finally, is to catch any issues with reading file
         try:
             textFileStr = textFile.read() #take the file we've opened, read it and store in string variable textFileStr
