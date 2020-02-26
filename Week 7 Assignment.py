@@ -14,6 +14,13 @@ def countLetterE(path):
             count+=1
     print(count) #once we've parsed through every char in textFileStr print the count
 
-#user_input = input("Enter the path to a file you want to count the times the letter e occurs: ")
-commandLineInput = sys.argv[1]
-countLetterE(commandLineInput)
+#try except blocks first trys to get commandLineInput
+try:
+    commandLineInput = sys.argv[1]
+    countLetterE(commandLineInput)
+#if user hasn't entered filename in command line then prompt them to type a path
+except:
+    userInput = input("Enter the path to a file you want to count the times the letter e occurs: ")
+    countLetterE(userInput)
+
+
