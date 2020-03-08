@@ -1,9 +1,12 @@
 #   Keith Ryan
 #   Week 4 Assignment
 #   program takes integer input from user
+#   It asks the user to input any positive integer and outputs the successive values of the following calculation. 
+#   At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. 
+#   Have the program end if the current value is one.
 user_input = int(input("Please enter a happy (positive) number - "))
 
-#definition to do odd number calculation, when we get an odd number after dividing some number by 2
+#function to do odd number calculation, when we get an odd number after dividing some number by 2
 #we multiply it by three and add 1
 def oddNum(odd_num):
     return (odd_num*3)+1

@@ -1,6 +1,9 @@
 #   Keith Ryan
 #   Week 5 Assignment
 #   A program that outputs whether or not today is a weekday.
+#   Original Solution takes input from the user
+#   Best Solution takes todays date using datetime.datetime function
+#   Alternate Solution takes similar approach to Best Solution but uses a dictionary key pairing to return the message
 
 from datetime import datetime
 

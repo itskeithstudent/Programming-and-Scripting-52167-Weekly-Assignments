@@ -1,6 +1,6 @@
 #   Keith Ryan
 #   Week 6 Assignment
-#function to get square root of user supplied number
+#   function to get square root of user supplied number
 
 #this function takes an original number and gets the square root of it
 def sqrt(original_num):
@@ -22,3 +22,5 @@ def sqrt(original_num):
 
 num = int(input("Enter a num to get square root of it: "))
 sqrt(num)
+
+#could also do this as sqrt(int(input("Enter a num to get square root of it: "))), but I think this is less readable
