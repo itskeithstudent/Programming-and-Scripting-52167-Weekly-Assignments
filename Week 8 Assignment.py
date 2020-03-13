@@ -6,6 +6,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+#These functions aren't necessary, could direcly use x**2 and x**3 in plt.plot arguments for the y axis
+#but i think declaring each of these as functions improves readability
 def f(x):
     return(x)
 
@@ -19,11 +21,16 @@ def h(x):
 #instead I define x as being a list using np.arange and then use that directly in plt.plot
 #x = np.linspace(4,1000) makes it seem as if f(x) and g(x) are same values, such is the difference in scale between g(x) and h(x)
 #x = np.linspace(4,100) gives a distinction between f(x) and g(x) but not much
+#logic below was largely taken from what was shown in this weeks 2nd lecture video
 x = np.linspace(0,4,25) #linspace gives us 25 steps between 0 and 4
-print(x)
-#all plot's show on same axis
-plt.plot(x, f(x), 'g.', linestyle='-') #plot f(x), x=[0,1,2,3], y or f(x)=[0,1,2,3]
-plt.plot(x, g(x), 'r.', linestyle='-') #plot g(x), x=[0,1,2,3], y or g(x)=[0,1,4,9]
-plt.plot(x, h(x), 'b.', linestyle='-') #plot g(x), x=[0,1,2,3], y or h(x)=[0,1,8,27]
 
+#all plot's show on same axis
+plt.plot(x, f(x), 'g.', linestyle='-', label="f(x)") #plot f(x), x=[0,1,2,3], y or f(x)=[0,1,2,3]
+plt.plot(x, g(x), 'r.', linestyle='-', label="g(x)") #plot g(x), x=[0,1,2,3], y or g(x)=[0,1,4,9]
+plt.plot(x, h(x), 'b.', linestyle='-', label="h(x)") #plot g(x), x=[0,1,2,3], y or h(x)=[0,1,8,27]
+
+plt.title("Week 8 Assignment: f(x), g(x), h(x)") #title for figure
+plt.xlabel("X: Function Input") #x axis label
+plt.ylabel("Y: Function Result") #y axis label
+plt.legend() #handily the legend uses both the dot and linestlye
 plt.show() #show the final plot
