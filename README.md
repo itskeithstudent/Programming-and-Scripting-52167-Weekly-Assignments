@@ -7,32 +7,39 @@ Assignments named by "Week X Assignment.py", with X denoting the week number, sh
 
 ## Description of assignments
 
-# Week 2 Assignment
+### Week 2 Assignment
 Run "Week 2 Assignment.py"
+
 Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output is their weight divided by their height in metres squared.
 
-# Week 3 Assignment
+### Week 3 Assignment
 Run "Week 3 Assignment.py"
+
 Write a program that takes asks a user to input a string and outputs every second letter in reverse order.
 
-# Week 4 Assignment
+### Week 4 Assignment
 Run "Week 4 Assignment.py"
+
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.
 
-# Week 5 Assignment
+### Week 5 Assignment
 Run "Week 5 Assignment.py"
+
 Write a program that outputs whether or not today is a weekday. An example of running this program on a Thursday is given below. 
 
-# Week 6 Assignment
+### Week 6 Assignment
 Run "Week 6 Assignment.py"
+
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. You should create a function called sqrt that does this.
 
-# Week 7 Assignment
+### Week 7 Assignment
 Run "Week 7 Assignment.py" from "Week 7 Assignment" Directory
+
 Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line. 
 
-# Week 9 Assignment
+### Week 9 Assignment
 Run "Week 9 Assignment.py" 
+
 Write a program that displays a plot of the functions f(x)=x, g(x)=x^2 and h(x)=x^3 in the range [0, 4] on the one set of axes. 
 
 ## Required Libraries
