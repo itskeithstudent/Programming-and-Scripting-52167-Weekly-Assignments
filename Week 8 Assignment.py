@@ -17,7 +17,10 @@ def h(x):
 
 #in order to get line I shouldn't be assigning points in a for loop
 #instead I define x as being a list using np.arange and then use that directly in plt.plot
+#x = np.arange(4,1000) makes it seem as if f(x) and g(x) are same values, such is the difference in scale between g(x) and h(x)
+#x = np.arange(4,100) gives a distinction between f(x) and g(x) but not much
 x = np.arange(4)
+#all plot's show on same axis
 plt.plot(x, f(x)) #plot f(x), x=[0,1,2,3], y or f(x)=[0,1,2,3]
 plt.plot(x, g(x)) #plot g(x), x=[0,1,2,3], y or g(x)=[0,1,4,9]
 plt.plot(x, h(x)) #plot g(x), x=[0,1,2,3], y or h(x)=[0,1,8,27]
