@@ -15,18 +15,11 @@ def g(x):
 def h(x):
     return(x**3)
 
-#my first pass is just to loop through and print, will add matplot.pyplot next pass
-for i in range(4):
-    print(f(i))
-    print(g(i))
-    print(h(i))
+#in order to get line I shouldn't be assigning points in a for loop
+#instead I define x as being a list using np.arange and then use that directly in plt.plot
+x = np.arange(4)
+plt.plot(x, f(x)) #plot f(x), x=[0,1,2,3], y or f(x)=[0,1,2,3]
+plt.plot(x, g(x)) #plot g(x), x=[0,1,2,3], y or g(x)=[0,1,4,9]
+plt.plot(x, h(x)) #plot g(x), x=[0,1,2,3], y or h(x)=[0,1,8,27]
 
-#plot the results of the functions from 0 to 3
-myPlot = plt.plot()
-for i in range(4):
-    plt.plot(i, f(i), 'g.')
-    plt.plot(i, g(i), 'b.')
-    plt.plot(i, h(i), 'r.')
-
-#show the final plot
-plt.show()
+plt.show() #show the final plot
