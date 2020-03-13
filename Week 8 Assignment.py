@@ -24,9 +24,9 @@ for i in range(4):
 #plot the results of the functions from 0 to 3
 myPlot = plt.plot()
 for i in range(4):
-    plt.plot(f(i), i, 'g.')
-    plt.plot(g(i), i, 'b.')
-    plt.plot(h(i), i, 'r.')
-    
+    plt.plot(i, f(i), 'g.')
+    plt.plot(i, g(i), 'b.')
+    plt.plot(i, h(i), 'r.')
+
 #show the final plot
 plt.show()
