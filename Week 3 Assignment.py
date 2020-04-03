@@ -7,6 +7,7 @@ user_input_str = str(input('Please enter a sentence: ')) #take in user input as 
 
 ### Below have done this 3 different ways, reassign variables as we go, I felt like this should be possible with just one line ###
 #take first char off start of string
+#see list slicing on strings section: https://docs.python.org/3/tutorial/introduction.html
 step_str = user_input_str[1:]
 #now get every second char starting with the first char
 step_str = step_str[::2]

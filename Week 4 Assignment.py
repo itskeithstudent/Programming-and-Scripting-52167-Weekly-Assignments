@@ -14,7 +14,7 @@ def oddNum(odd_num):
 concat_operation=user_input
 #if my user inputs 1 all we do is print 1
 if(user_input==1):
-    print(user_input)
+    print(user_input, end=' ')
 #else we start to enter a while loop which remains true until the user_input is no longer > 1
 else:
     #initialise concat_operation as blank
