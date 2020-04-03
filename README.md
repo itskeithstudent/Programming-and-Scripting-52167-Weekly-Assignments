@@ -37,8 +37,8 @@ Run "Week 7 Assignment.py" from "Week 7 Assignment" Directory
 
 Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line. 
 
-### Week 9 Assignment
-Run "Week 9 Assignment.py" 
+### Week 8 Assignment
+Run "Week 8 Assignment.py" 
 
 Write a program that displays a plot of the functions f(x)=x, g(x)=x^2 and h(x)=x^3 in the range [0, 4] on the one set of axes. 
 
