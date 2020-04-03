@@ -10,7 +10,8 @@ from datetime import datetime
 #########################
 ### Original solution ###
 #########################
-#these two lists are lowercase, in case we get variance in use of case in user supplied string e.g. Monday/TUESdaY/etc.
+#these two tuples are lowercase, in case we get variance in use of case in user supplied string e.g. Monday/TUESdaY/etc.
+#using tuples instead of list as weekdays and weekend aren't going to change, unless we get a threeday weekend some point in the future
 weekdays = ("monday","tuesday","wednesday","thursday","friday")
 weekend = ("saturday", "sunday")
 #take in day of the week from user
@@ -55,3 +56,10 @@ days_of_the_week_dict = {
 }
 
 print(days_of_the_week_dict[today])
+
+### More practical version of previous dict approach. Using List comprehension to add previously defined weekdays and weekend list
+# using this guide as reference: https://thispointer.com/python-how-to-convert-a-list-to-dictionary/
+days_of_the_week_dict_2 = {i:condolences_str for i in weekdays}
+days_of_the_week_dict_2.update({i:congrats_str for i in weekend})
+
+print(days_of_the_week_dict_2[today])
